@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente de API</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- CSS only -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+
+    <link href="/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+
+    <link href="/docs/4.1/dist/css/bootstrap.css" rel="stylesheet">
+
+
+   
+</head>
+<body class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+    <div class="bd-example">
+        <div class="card-columns">
+          <div class="card">
+            <img class="card-img-top" data-src="holder.js/100px160/" alt="Imagem de capa do card" />
+            <div class="card-body">
+              <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
+              <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+            </div>
+          </div>
+          <div class="card p-3">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img class="card-img-top" data-src="holder.js/100px160/" alt="Imagem de capa do card" />
+            <div class="card-body">
+              <h5 class="card-title">Título do card</h5>
+              <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+              <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+          </div>
+          <div class="card bg-primary text-white text-center p-3">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+              <footer class="blockquote-footer">
+                <small>
+                  Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Título do card</h5>
+              <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+              <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" data-src="holder.js/100px260/" alt="Imagem do card" />
+          </div>
+          <div class="card p-3 text-right">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Título do card</h5>
+              <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+              <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-columns"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px160/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card que quebra em uma nova linha<span class="nt">&lt;/h5&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card p-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote mb-0 card-body"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>
+                  Alguém famoso em <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Título da fonte"</span><span class="nt">&gt;</span>Título da fonte<span class="nt">&lt;/cite&gt;</span>
+                <span class="nt">&lt;/small&gt;</span>
+              <span class="nt">&lt;/footer&gt;</span>
+            <span class="nt">&lt;/blockquote&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px160/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card bg-primary text-white text-center p-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote mb-0"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small&gt;</span>
+                  Alguém famoso em <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Título da fonte"</span><span class="nt">&gt;</span>Título da fonte<span class="nt">&lt;/cite&gt;</span>
+                <span class="nt">&lt;/small&gt;</span>
+              <span class="nt">&lt;/footer&gt;</span>
+            <span class="nt">&lt;/blockquote&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-center"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img"</span> <span class="na">src=</span><span class="s">".../100px260/"</span> <span class="na">alt=</span><span class="s">"Imagem do card"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card p-3 text-right"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote mb-0"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>
+                  Alguém famoso em <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Título da fonte"</span><span class="nt">&gt;</span>Título da fonte<span class="nt">&lt;/cite&gt;</span>
+                <span class="nt">&lt;/small&gt;</span>
+              <span class="nt">&lt;/footer&gt;</span>
+            <span class="nt">&lt;/blockquote&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+        
+    
+</body>
+</html>
