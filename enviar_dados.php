@@ -4,7 +4,7 @@
     
     //porta, usuário, senha, nome data base
     //caso não consiga conectar mostra a mensagem de erro mostrada na conexão
-    $conexao = mysqli_connect("localhost", "root", "Stellantis@2023", "sge") or die("Erro na conexão com banco de dados " . mysqli_error($conexao));
+    $conexao = mysqli_connect("stellantis.database.windows.net", "Adm", "Stellantis@2023", "SGE") or die("Erro na conexão com banco de dados " . mysqli_error($conexao));
 
     // DEFINE O FUSO HORARIO COMO O HORARIO DE BRASILIA
     date_default_timezone_set('America/Sao_Paulo');
