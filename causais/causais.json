@@ -1,0 +1,174 @@
+{
+  "causais": [
+    {
+      "type": "1- Aguardando diagnóstico",
+      "causal":"Aguardando Analista",
+      "description": "Aguardando analista para atividade de calibração"
+    },
+    {
+      "type": "2- Aguardando mecânico",
+      "causal":"Troca/Montagem de motor",
+      "description": "Inclui motor escfriando, Instrumentação, Checklist"
+    },
+    {
+      "type": "2- Aguardando mecânico",
+      "causal":"Troca e modificação de componente do motor",
+      "description": "Coletor, descarga, etc"
+    },
+    {
+      "type": "2- Aguardando mecânico",
+      "causal":"Intervenção do Operador",
+      "description": "Parada programada de teste - indicar o motivo da parada em obs"
+    },
+    {
+      "type": "3 - Mecânica/setup",
+      "causal":"Diagnose de motor",
+      "description": "Dentro da cela - oficina mecânica"
+    },
+    {
+      "type": "3 - Mecânica/setup",
+      "causal":"Reparo de motor",
+      "description": "Reparação na oficina mecânica / instrumentação externa"
+    },
+    {
+      "type": "4- Programação de Cela",
+      "causal":"Aguardando Equipe de engenharia",
+      "description": "Equipe técnica"
+    },
+    {
+      "type": "4- Programação de Cela",
+      "causal":"Ajustes de ciclo de Prova",
+      "description": "Ajustes feitos pela equipe de engenharia"
+    },
+    {
+      "type": "4- Programação de Cela",
+      "causal":"Configuração de alarmes",
+      "description": "Configurações feitas pela equipe de engenharia"
+    },
+    {
+      "type": "4- Programação de Cela",
+      "causal":"Configuração do computador da testcell",
+      "description": ""
+    },
+    {
+      "type": "4- Programação de Cela",
+      "causal":"Manutenção da rede de computadores",
+      "description": ""
+    },
+    {
+      "type": "4- Programação de Cela",
+      "causal":"Calibração de EIMEs",
+      "description": "Calibração geral programada para a testcell"
+    },
+    {
+      "type": "5- Engenheiro de Aplicação",
+      "causal":"Atividade de aplicadores",
+      "description": "Horas paradas para atividade do time de aplicação"
+    },
+    {
+      "type": "5- Engenheiro de Aplicação",
+      "causal":"Motor Parado a pedido de analista",
+      "description": "Analista solicitou a parada"
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Manutenção de dinamômetro",
+      "description": "Feita pela equipe de manutenção"
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Calibração de célula de carga",
+      "description": "Feita pela equipe de manutenção"
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Reparo nos sistemas de trocador de calor",
+      "description": "Limpeza do trocador"
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Reparo nos sistemas de ar condicionado",
+      "description": ""
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Reparo nos sistemas de chiller",
+      "description": ""
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Aguardando manutenção elétrica",
+      "description": ""
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Aguardando manutenção mecânica",
+      "description": ""
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Erro AMA I60 - Bancada de emissões",
+      "description": ""
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Aguardando solda escapamento",
+      "description": "Descarga, instrumentação, ,catalisador,..."
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Manutenção elétrica dentro da sala",
+      "description": "Dentro da testcell"
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Manutenção mecânica dentro da sala",
+      "description": "Dentro da testcell"
+    },
+    {
+      "type": "6- Manutenção",
+      "causal":"Manutenção na torre de arrefecimento",
+      "description": "Dentro da testcell"
+    },
+    {
+      "type": "7- Instrumentação",
+      "causal":"Verificação de chicotes",
+      "description": "Equipe de instrumentação"
+    },
+    {
+      "type": "7- Instrumentação",
+      "causal":"Aguardando sensores de combustão",
+      "description": "Sensores Indicom - AVL"
+    },
+    {
+      "type": "7- Instrumentação",
+      "causal":"Aguardando sensores de temperatura",
+      "description": "Termopar, PT100,..."
+    },
+    {
+      "type": "7- Instrumentação",
+      "causal":"Instalação de novos equipamentos de medição",
+      "description": "ES590, ES636, Microsoot, PLUtron,..."
+    },
+    {
+      "type": "8- Falta de objeto de prova",
+      "causal":"Horas paradas por falta de motor",
+      "description": ""
+    },
+    {
+      "type": "8- Falta de objeto de prova",
+      "causal":"Horas paradas sem componente do motor",
+      "description": "Aguardando peças para montagem do motor"
+    },
+    {
+      "type": "9- Parada de teste",
+      "causal":"Horas sem expediente de dinamometristas",
+      "description": ""
+    },
+    {
+      "type": "10- Falta de dados",
+      "causal":"Reformas da sala-prova",
+      "description": "Pintura, limpezas em geral"
+    }
+  ]
+}
