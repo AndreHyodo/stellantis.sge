@@ -1,7 +1,7 @@
 // Função para buscar os dados da API
 async function fetchData() {
   try {
-    const response = await fetch('http://localhost/sge/sge_remoto/causais.json');
+    const response = await fetch('https://andrehyodo.github.io/stellantis.sge/causais/causais.json');
     const data = await response.json();
     return data.causais;
   } catch (error) {
