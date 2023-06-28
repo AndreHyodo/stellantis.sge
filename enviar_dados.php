@@ -8,8 +8,8 @@
 
     // PHP Data Objects(PDO) Sample Code:
     try {
-        $conn = new PDO("sqlsrv:server = tcp:stellantis.database.windows.net,1433; Database = SGE", "Adm", "Stellantis@2023");
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conexao = new PDO("sqlsrv:server = tcp:stellantis.database.windows.net,1433; Database = SGE", "Adm", "Stellantis@2023");
+        $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch (PDOException $e) {
         print("Error connecting to SQL Server.");
@@ -19,7 +19,7 @@
     // SQL Server Extension Sample Code:
     $connectionInfo = array("UID" => "Adm", "pwd" => "Stellantis@2023", "Database" => "SGE", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
     $serverName = "tcp:stellantis.database.windows.net,1433";
-    $conn = sqlsrv_connect($serverName, $connectionInfo);
+    $conexao = sqlsrv_connect($serverName, $connectionInfo);
         
     // DEFINE O FUSO HORARIO COMO O HORARIO DE BRASILIA
     date_default_timezone_set('America/Sao_Paulo');
