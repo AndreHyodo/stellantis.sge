@@ -52,7 +52,7 @@
     $obs = "Valor obs";
     $date = "Valor date";
 
-inserirDados($id, $TestCell, $causal, $hora_inicio, $hora_final, $obs, $date);
+    inserirDados($id, $TestCell, $causal, $hora_inicio, $hora_final, $obs, $date);
 /*
 ?>
     
