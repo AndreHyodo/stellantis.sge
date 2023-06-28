@@ -1,0 +1,120 @@
+
+body {
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #24405d;
+    border: 5px black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+main {
+    margin-bottom: 100px; 
+    margin-top: 10px;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    height: 10%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+div#head{
+    padding: 0%;
+}
+
+.titleHeader{
+    color: #24405d;
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: stretch;
+    margin: 30px;
+    top:50%;
+}
+
+.logo{
+    margin-left: 20px;
+    /*margin: 0%;*/
+    width: 200px;
+    height: 100%;
+}
+
+
+
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+.description-marker {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.description-marker svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.description-marker:hover + .description {
+    display: inline;
+}
+
+.description {
+    display: none;
+    color: red;
+}
+
+#inputs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+#texts{
+    display: flex;
+    justify-content: center;
+    margin: 5px; 
+    color: white;   
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1000px);
+	grid-template-rows: 1000px 1000px 1000px;
+    justify-content: stretch;
+}
+
+.api{
+    margin-bottom: 200px;
+}
+
+.toggle-data-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
