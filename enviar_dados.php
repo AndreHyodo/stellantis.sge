@@ -1,23 +1,60 @@
 <?php
     //aqui é só um exemplo para não rodar o script abaixo sem necessidade
-    if ((isset($_POST['causal']))&&(!empty($_POST['causal']))){
+    //if ((isset($_POST['causal']))&&(!empty($_POST['causal']))){
     
     //porta, usuário, senha, nome data base
     //caso não consiga conectar mostra a mensagem de erro mostrada na conexão
     //$conexao = mysqli_connect("stellantis.database.windows.net", "Adm", "Stellantis@2023", "SGE") or die("Erro na conexão com banco de dados " . mysqli_error($conexao));
 
     // PHP Data Objects(PDO) Sample Code:
+    $servername = "stellantis.database.windows.net";
+    $username = "Adm";
+    $password = "Stellantis@2023";
+    $dbname = "SGE";
+
     try {
-        $conexao = new PDO("sqlsrv:server = tcp:stellantis.database.windows.net,1433; Database = SGE", "Adm", "Stellantis@2023");
-        $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }
-    catch (PDOException $e) {
-        print("Error connecting to SQL Server.");
-        die(print_r($e));
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "Conexão bem-sucedida";
+    } catch(PDOException $e) {
+        echo "Falha na conexão: " . $e->getMessage();
     }
 
     // DEFINE O FUSO HORARIO COMO O HORARIO DE BRASILIA
     date_default_timezone_set('America/Sao_Paulo');
+
+    function inserirDados($id, $TestCell, $causal, $hora_inicio, $hora_final, $obs, $date) {
+        global $conn;
+    
+        $stmt = $conn->prepare("INSERT INTO tabela (id, TestCell, causal, hora_inicio, hora_final, obs, date) 
+                               VALUES (:id, :TestCell, :causal, :hora_inicio, :hora_final, :obs, :date)");
+        $stmt->bindParam(':id', $id);
+        $stmt->bindParam(':TestCell', $TestCell);
+        $stmt->bindParam(':causal', $causal);
+        $stmt->bindParam(':hora_inicio', $hora_inicio);
+        $stmt->bindParam(':hora_final', $hora_final);
+        $stmt->bindParam(':obs', $obs);
+        $stmt->bindParam(':date', $date);
+    
+        if ($stmt->execute()) {
+            echo "Dados inseridos com sucesso";
+        } else {
+            echo "Falha ao inserir dados";
+        }
+    }
+    
+    // Exemplo de uso da função
+    $id = 1;
+    $TestCell = "Valor TestCell";
+    $causal = "Valor causal";
+    $hora_inicio = "Valor hora_inicio";
+    $hora_final = "Valor hora_final";
+    $obs = "Valor obs";
+    $date = "Valor date";
+
+inserirDados($id, $TestCell, $causal, $hora_inicio, $hora_final, $obs, $date);
+/*
+?>
     
     if(!empty($_POST)) {
         try {
@@ -44,7 +81,7 @@
         }
         echo "<h3>Your're registered!</h3>";
     }
-
+    */
 
     /*
     // SQL Server Extension Sample Code:
